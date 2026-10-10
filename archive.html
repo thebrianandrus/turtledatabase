@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Species Archive — Turtle Database</title>
+<meta name="description" content="Search and filter every turtle and tortoise in the Turtle Database by realm and conservation status.">
+<meta property="og:title" content="Species Archive — Turtle Database">
+<meta property="og:description" content="Search and filter every turtle and tortoise in the Turtle Database by realm and conservation status.">
+<meta property="og:site_name" content="Turtle Database">
+<meta name="theme-color" content="#01060c">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="archive" class="theme-ocean">
+<header class="page-hero" style="min-height:52vh">
+  <canvas class="ocean" aria-hidden="true"></canvas>
+  <svg class="hero-art" viewBox="0 0 200 240" aria-hidden="true"><use href="#turtle"/></svg>
+  <div class="inner">
+    <div class="eyebrow">The Archive</div>
+    <h1><span class="w">SPECIES INDEX</span></h1>
+    <p class="tagline">Every shell catalogued. Search by name, place, diet — or legend.</p>
+  </div>
+</header>
+
+<section class="bg-2 tight">
+  <div class="wrap">
+    <div class="toolbar">
+      <form class="search-box" id="archiveForm" role="search">
+        <input type="search" id="q" placeholder="Search the archive…" aria-label="Search species">
+        <button type="submit">Seek</button>
+      </form>
+      <div class="toolbar-row">
+        <div class="chips" role="group" aria-label="Filter by realm">
+          <button class="chip" data-filter="all">All Realms</button>
+          <button class="chip" data-filter="ocean">Oceans</button>
+          <button class="chip" data-filter="river">Rivers &amp; Swamps</button>
+          <button class="chip" data-filter="land">Lands</button>
+          <button class="chip" data-filter="ancient">Ancients</button>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <select id="status" aria-label="Filter by status">
+            <option value="all">Any status</option>
+            <option value="CR">Critically Endangered</option>
+            <option value="EN">Endangered</option>
+            <option value="VU">Vulnerable</option>
+            <option value="LC">Least Concern</option>
+            <option value="DD">Data Deficient</option>
+            <option value="NE">Not Evaluated</option>
+            <option value="EX">Extinct · Fossil</option>
+          </select>
+          <select id="sort" aria-label="Sort">
+            <option value="realm">Sort: By realm</option>
+            <option value="az">Sort: A–Z</option>
+            <option value="threat">Sort: Most threatened</option>
+          </select>
+        </div>
+      </div>
+      <div class="count-line" id="countLine"></div>
+    </div>
+    <div class="sp-grid" id="archiveGrid" aria-live="polite"></div>
+  </div>
+</section>
+
+<script src="assets/js/species.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

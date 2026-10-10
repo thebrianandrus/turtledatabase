@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit a Sighting — Turtle Database</title>
+<meta name="description" content="Report a turtle or tortoise sighting to the Turtle Database.">
+<meta property="og:title" content="Submit a Sighting — Turtle Database">
+<meta property="og:description" content="Report a turtle or tortoise sighting to the Turtle Database.">
+<meta property="og:site_name" content="Turtle Database">
+<meta name="theme-color" content="#01060c">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="" class="theme-river">
+<header class="page-hero" style="min-height:56vh">
+  <canvas class="ocean" aria-hidden="true"></canvas>
+  <svg class="hero-art" viewBox="0 0 120 120" aria-hidden="true"><use href="#river"/></svg>
+  <div class="inner">
+    <div class="eyebrow">Field Report</div>
+    <h1><span class="w">SUBMIT A SIGHTING</span></h1>
+    <p class="tagline">Saw a shell in the wild? Every record helps map where turtles still survive.</p>
+  </div>
+</header>
+<section class="bg-2 tight">
+  <div class="wrap side-grid">
+    <div class="reveal prose">
+      <div class="kicker">Before You Report</div>
+      <h3 style="margin-top:0">Watch, don't touch</h3>
+      <p>Keep your distance and let the animal go about its business. Photos from a respectful distance are perfect.</p>
+      <h3>Nesting sea turtle?</h3>
+      <p>Stay back, stay dark — no flashlights or flash photography — and contact your local wildlife agency.</p>
+      <h3>Injured or in danger?</h3>
+      <p>Contact local wildlife authorities or a licensed rehabilitator right away. This form isn't monitored for emergencies.</p>
+    </div>
+    <div class="reveal">
+      <form class="form js-form" data-endpoint="">
+        <div class="field"><label for="s-name">Your name</label><input id="s-name" name="name" required></div>
+        <div class="field"><label for="s-email">Email</label><input id="s-email" name="email" type="email" required></div>
+        <div class="field full"><label for="sp-name">Species (if known)</label><input id="sp-name" name="species" list="species-list" placeholder="Start typing, or describe it below"><datalist id="species-list"></datalist></div>
+        <div class="field"><label for="s-date">Date seen</label><input id="s-date" name="date" type="date" required></div>
+        <div class="field"><label for="s-count">How many?</label><input id="s-count" name="count" type="number" min="1" value="1"></div>
+        <div class="field full"><label for="s-loc">Location</label><input id="s-loc" name="location" placeholder="Nearest town, park, beach or river" required></div>
+        <div class="field full"><label for="s-hab">Habitat</label>
+          <select id="s-hab" name="habitat"><option>Ocean / beach</option><option>River / stream</option><option>Lake / pond</option><option>Swamp / marsh</option><option>Forest</option><option>Grassland / desert</option><option>Road / urban</option><option>Other</option></select></div>
+        <div class="field full"><label for="s-notes">What did you see?</label><textarea id="s-notes" name="notes" placeholder="Size, markings, behavior, anything notable"></textarea></div>
+        <div class="field full"><label for="s-photo">Photo (optional)</label><input id="s-photo" name="photo" type="file" accept="image/*"></div>
+        <label class="check full"><input type="checkbox" required> I observed this animal without disturbing it.</label>
+        <div class="full"><button class="btn btn-primary" type="submit">Submit Sighting</button></div>
+      </form>
+      <div class="form-success"><h3>Sighting logged.</h3><p>Thank you, field agent. The archive grows one record at a time.</p></div>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/species.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Oceans — Turtle Database</title>
+<meta name="description" content="Sea turtles of the world — the seven species that navigate every ocean.">
+<meta property="og:title" content="The Oceans — Turtle Database">
+<meta property="og:description" content="Sea turtles of the world — the seven species that navigate every ocean.">
+<meta property="og:site_name" content="Turtle Database">
+<meta name="theme-color" content="#01060c">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="realms" class="theme-ocean">
+<header class="page-hero">
+  <canvas class="ocean" aria-hidden="true"></canvas>
+  <svg class="hero-art" viewBox="0 0 200 240" aria-hidden="true"><use href="#turtle"/></svg>
+  <div class="inner">
+    <div class="eyebrow">Realm I</div>
+    <h1><span class="w">THE OCEANS</span></h1>
+    <p class="tagline">Seven species. Every sea. Journeys that span entire ocean basins — and always, somehow, the way back home.</p>
+  </div>
+</header>
+
+<section class="bg-2 tight">
+  <div class="wrap">
+    <div class="reveal"><div class="kicker">By the Numbers</div></div>
+    <div style="margin-top:-30px"><div class="stat-grid reveal"><div class="stat"><b><span class="count" data-to="0" data-realm-count>0</span><em></em></b><span>Species in this<br>realm's archive</span></div><div class="stat"><b><span class="count" data-to="1000" >0</span><em>m+</em></b><span>Deepest leatherback<br>dives recorded</span></div><div class="stat"><b><span class="count" data-to="20000" >0</span><em>km+</em></b><span>Longest single<br>migration tracked</span></div></div></div>
+  </div>
+</section>
+
+<section class="bg-3 divider">
+  <div class="wrap">
+    <div class="reveal"><div class="kicker">Secrets of the Realm</div><h2>Laws of the open sea</h2></div>
+    <div class="fact-grid"><div class="fact reveal"><div class="num">01</div><h3>The Magnetic Map</h3><p>Hatchlings sense the strength and angle of Earth's magnetic field, using it like a built-in GPS to stay inside warm currents and, years later, find their way back to the coast where they hatched.</p></div><div class="fact reveal"><div class="num">02</div><h3>Born by Temperature</h3><p>In sea turtles, sand temperature decides sex: warmer nests produce mostly females, cooler nests mostly males. A warming climate is tipping the balance.</p></div><div class="fact reveal"><div class="num">03</div><h3>Salt Tears</h3><p>Special glands beside the eyes pump out excess salt from seawater and food. Nesting females look like they're crying — they're just desalinating.</p></div></div>
+  </div>
+</section>
+
+<section class="bg-2 divider">
+  <div class="wrap">
+    <div class="reveal"><div class="kicker">Inhabitants</div><h2>Species of this realm</h2></div>
+    <div class="sp-grid" data-realm="ocean"></div>
+  </div>
+</section>
+
+<nav class="pager" aria-label="Other realms">
+  <a href="ancients.html" class="c-ancient"><small>← Previous Realm</small><b>The Ancients</b></a>
+  <a href="rivers.html" class="c-river"><small>Next Realm →</small><b>Rivers &amp; Swamps</b></a>
+</nav>
+
+<script src="assets/js/species.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

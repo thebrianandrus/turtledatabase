@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Turtle Database</title>
+<meta name="description" content="Get in touch with the Turtle Database.">
+<meta property="og:title" content="Contact — Turtle Database">
+<meta property="og:description" content="Get in touch with the Turtle Database.">
+<meta property="og:site_name" content="Turtle Database">
+<meta name="theme-color" content="#01060c">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="" class="theme-ocean">
+<header class="page-hero" style="min-height:52vh">
+  <canvas class="ocean" aria-hidden="true"></canvas>
+  <svg class="hero-art" viewBox="0 0 200 240" aria-hidden="true"><use href="#turtle"/></svg>
+  <div class="inner">
+    <div class="eyebrow">Signal the Surface</div>
+    <h1><span class="w">CONTACT</span></h1>
+    <p class="tagline">Corrections, collaborations, or just a great turtle story — send it our way.</p>
+  </div>
+</header>
+<section class="bg-2 tight">
+  <div class="wrap side-grid">
+    <div class="reveal">
+      <div class="kicker">Reach Us</div>
+      <ul class="contact-list">
+        <li><small>Email</small><span><a href="mailto:hello@turtledatabase.com">hello@turtledatabase.com</a></span></li>
+        <li><small>Corrections</small><span>Found an error? Tell us the species and the source.</span></li>
+        <li><small>Emergencies</small><span>Injured wildlife? Call your local wildlife agency or rehabilitator.</span></li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <form class="form js-form" data-endpoint="">
+        <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" required></div>
+        <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" required></div>
+        <div class="field full"><label for="c-topic">Topic</label>
+          <select id="c-topic" name="topic"><option>General</option><option>Correction</option><option>Collaboration</option><option>Press</option></select></div>
+        <div class="field full"><label for="c-msg">Message</label><textarea id="c-msg" name="message" required></textarea></div>
+        <div class="full"><button class="btn btn-primary" type="submit">Send Message</button></div>
+      </form>
+      <div class="form-success"><h3>Message received.</h3><p>It may take a moment to surface — we'll reply soon.</p></div>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/species.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

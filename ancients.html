@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ancients — Turtle Database</title>
+<meta name="description" content="Fossil turtles — from shell-less ancestors to car-sized sea giants.">
+<meta property="og:title" content="The Ancients — Turtle Database">
+<meta property="og:description" content="Fossil turtles — from shell-less ancestors to car-sized sea giants.">
+<meta property="og:site_name" content="Turtle Database">
+<meta name="theme-color" content="#01060c">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,400;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="realms" class="theme-ancient">
+<header class="page-hero">
+  <canvas class="ocean" aria-hidden="true"></canvas>
+  <svg class="hero-art" viewBox="0 0 120 120" aria-hidden="true"><use href="#ancient"/></svg>
+  <div class="inner">
+    <div class="eyebrow">Realm IV</div>
+    <h1><span class="w">THE ANCIENTS</span></h1>
+    <p class="tagline">Before the shell was a fortress, it was an experiment. Meet the giants and forerunners written in stone.</p>
+  </div>
+</header>
+
+<section class="bg-2 tight">
+  <div class="wrap">
+    <div class="reveal"><div class="kicker">By the Numbers</div></div>
+    <div style="margin-top:-30px"><div class="stat-grid reveal"><div class="stat"><b><span class="count" data-to="0" data-realm-count>0</span><em></em></b><span>Species in this<br>realm's archive</span></div><div class="stat"><b><span class="count" data-to="220" >0</span><em>M</em></b><span>Years since the first<br>shelled turtles</span></div><div class="stat"><b><span class="count" data-to="66" >0</span><em>M</em></b><span>Years since they survived<br>the dinosaurs' extinction</span></div></div></div>
+  </div>
+</section>
+
+<section class="bg-3 divider">
+  <div class="wrap">
+    <div class="reveal"><div class="kicker">Secrets of the Realm</div><h2>Laws of deep time</h2></div>
+    <div class="fact-grid"><div class="fact reveal"><div class="num">01</div><h3>A Shell Made of Ribs</h3><p>A turtle's shell isn't armor bolted on — it's built from widened ribs and backbone fused with bony plates. It's why a turtle can never leave its shell.</p></div><div class="fact reveal"><div class="num">02</div><h3>Belly First</h3><p>Odontochelys, around 220 million years old, had a full belly plate but only a partial top shell — evidence the shell was assembled piece by piece.</p></div><div class="fact reveal"><div class="num">03</div><h3>Survivors of the Impact</h3><p>When the asteroid ended the age of dinosaurs 66 million years ago, many turtle lineages made it through — and their descendants are still with us.</p></div></div>
+  </div>
+</section>
+
+<section class="bg-2 divider">
+  <div class="wrap">
+    <div class="reveal"><div class="kicker">Inhabitants</div><h2>Species of this realm</h2></div>
+    <div class="sp-grid" data-realm="ancient"></div>
+  </div>
+</section>
+
+<nav class="pager" aria-label="Other realms">
+  <a href="lands.html" class="c-land"><small>← Previous Realm</small><b>The Lands</b></a>
+  <a href="oceans.html" class="c-ocean"><small>Next Realm →</small><b>The Oceans</b></a>
+</nav>
+
+<script src="assets/js/species.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
